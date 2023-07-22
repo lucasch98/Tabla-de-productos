@@ -90,12 +90,14 @@ function ProductTable({ products, filterText, inStockOnly }){
 function SearchBar({ filterText, inStockOnly, onFilterTextChange, onInStockOnlyChange }){
   return(
     <form>
-      <input 
+        <input 
         type="text"
         placeholder="Buscar..."
         value={filterText}
         onChange={(e) => onFilterTextChange(e.target.value)}/>
-        
+     
+     <br />
+
       <label>
         <input 
           type="checkbox" 
@@ -110,7 +112,7 @@ function SearchBar({ filterText, inStockOnly, onFilterTextChange, onInStockOnlyC
 
 const PRODUCTS = [
   {category: "Frutas", price: "$1", stocked: true, name: "Manzana"},
-  {category: "Frutas", price: "$1", stocked: true, name: "Fruta del dragón"},
+  {category: "Frutas", price: "$1", stocked: true, name: "Naranja"},
   {category: "Frutas", price: "$2", stocked: false, name: "Maracuyá"},
   {category: "Verduras", price: "$2", stocked: true, name: "Espinaca"},
   {category: "Verduras", price: "$4", stocked: false, name: "Calabaza"},
