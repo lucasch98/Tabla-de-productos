@@ -1,4 +1,5 @@
 import { useState } from "react";
+import React from 'react';
 
 function FilterableProductTable({ products }){
   const [filterText, setFilterText] = useState('');
